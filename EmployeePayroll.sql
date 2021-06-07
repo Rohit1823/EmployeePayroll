@@ -19,3 +19,9 @@ insert into employee_payroll values
 ('Jack',50000.0,'2020-05-21');
 
 select * from employee_payroll
+
+insert into employee_payroll values
+('Mark',100000.0,'2017-01-03')
+
+
+select salary from employee_payroll where name = 'Ramesh'
