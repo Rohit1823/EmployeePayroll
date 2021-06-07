@@ -40,3 +40,9 @@ select max(salary) as 'maximumSalary',gender from employee_payroll group by gend
 
 select count(gender) as 'male' from employee_payroll where gender='M' 
 select count(gender) as 'female' from employee_payroll where gender='F' 
+
+alter table employee_payroll add
+phone varchar(13),
+department varchar(100) not null default 'CSE',
+address varchar(250) not null default 'India'
+select * from employee_payroll
