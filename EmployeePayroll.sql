@@ -25,3 +25,8 @@ insert into employee_payroll values
 
 
 select salary from employee_payroll where name = 'Ramesh'
+
+alter table employee_payroll add gender char(1);
+select * from employee_payroll;
+update employee_payroll set gender='M' where name in ('Ramesh','Jack','Mark');
+update employee_payroll set gender='F' where id in (2);
